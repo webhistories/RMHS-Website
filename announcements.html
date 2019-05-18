@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>RMHS - Announcements</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <!--calndar-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+  <style>
+      .navbar .navbar-brand {
+        font-family: Elephant;
+        padding-left: 20px;
+        padding-top: 18px;
+        color: #00004d;
+        font-size: 18px;
+        text-shadow: 2px 2px 20px #00264d;
+      }
+      
+      .navbar {
+        background-color: white !important;
+        border-bottom-color: #006699;
+        height: 80px;
+      }
+
+      .logo {
+        width: 65px;
+        height: 65px;
+        float: left;
+        margin-top: 6px;
+      }
+
+      .navbar .nav li a {
+        margin-top: 15px;
+        color: #006699;
+        font-family: Calibri Light;
+      }
+
+      .navbar .nav li a:hover {
+        color: #00004d;
+        font-weight: bold;
+        text-shadow: 1px 1px 4px #cce6ff;
+        transition: .1s;
+      }
+
+      .navbar .nav li a:active {
+        color: #00004d;
+        font-weight: bold;
+        text-shadow: 1px 1px 4px #cce6ff;
+      }
+
+      .navbar .nav .dropdown:hover .dropdown-menu {
+        display: block;
+        text-align: center;
+      }
+
+      .title1 {
+        text-align: center;
+        color: #000080;
+        font-family: Georgia Pro Black;
+        font-weight: bolder;
+        font-size: 40px;
+      }
+
+      p {
+        font-family: Calibri Light;
+        font-size: 20px;
+        color: #000080;
+        text-align: center;
+      }
+
+      body {
+        margin: 40px 10px;
+        padding: 0;
+      }
+
+      .navbar-toggle {
+        background-color: #203864; 
+      }
+
+      .collapse {
+        background-color: white;
+      }
+      </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img class="logo" src="pics/logo.png">
+      <p class="navbar-brand">Ramon Magsaysay</br>High School</p>
+    </div>
+         <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="news.html">NEWS</a></li>
+        <li><a href="announcements.php">ANNOUNCEMENTS</a></li>
+        <li><a href="#">ALUMNI</a></li>
+        <li><a href="#">GALLERY</a></li>
+        <li class="dropdown">
+          <a href="#" class="data-toggle" data-toggle="dropdown">PUBLICATIONS</a>
+          <ul class="dropdown-menu">
+            <li><a href="b&w.html">BLUE AND WHITE</a></li>
+            <li><a href="silahis.html">ANG SILAHIS</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="data-toggle" data-toggle="dropdown">ABOUT</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">AWARDS AND RECOGNITION</a></li>
+            <li><a href="application_form.pdf">APPLY NOW!</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="#">BRIEF HISTORY</a></li>
+          </ul>
+        </li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="login.php?logout='1'" >LOGOUT</a></li>
+
+         <li> <a href="#button" data-toggle="modal"><span class="glyphicon glyphicon-bell"></span> </a> 
+         </li>
+         
+      </ul>
+  </div>
+</nav><?php include('buttonSubscribe.php'); ?> 
+
+  <div class="container" style="margin-top: 100px">
+  <h3 class="title1">School Calendar</h3>
+  <p>S.Y. 2018-2019</p>
+  <div>
+    <center>
+      <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;height=600&amp;wkst=1&amp;bgcolor=%2333ccff&amp;src=en.philippines%23holiday%40group.v.calendar.google.com&amp;color=%2329527A&amp;src=e85corbnfl31d5a4lfen7q3k8g%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=Asia%2FManila" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </center>
+  </div>
+</div>
+
+</body>
+</html>

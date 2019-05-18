@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>RMHS - Profile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+      .navbar .navbar-brand {
+        font-family: Elephant;
+        padding-left: 20px;
+        padding-top: 18px;
+        color: #00004d;
+        font-size: 18px;
+        text-shadow: 2px 2px 20px #00264d;
+      }
+      
+      .navbar {
+        background-color: white !important;
+        border-bottom-color: #006699;
+        height: 80px;
+      }
+
+      .logo {
+        width: 65px;
+        height: 65px;
+        float: left;
+        margin-top: 6px;
+      }
+
+      .navbar .nav li a {
+        margin-top: 15px;
+        color: #006699;
+        font-family: Calibri Light;
+      }
+
+      .navbar .nav li a:hover {
+        color: #00004d;
+        font-weight: bold;
+        text-shadow: 1px 1px 4px #cce6ff;
+        transition: .1s;
+      }
+
+      .navbar .nav li a:active {
+        color: #00004d;
+        font-weight: bold;
+        text-shadow: 1px 1px 4px #cce6ff;
+      }
+
+      .navbar .nav .dropdown:hover .dropdown-menu {
+        display: block;
+        text-align: center;
+      }
+
+      .navbar2 {
+        height: 50px;
+        background-color: #203864;
+      }
+
+      .panel1 {
+        width: 28%;
+        height: 420px;
+        overflow: hidden;
+        background: #deebf7;
+        float: left;
+        margin: 20px auto;
+        border-radius: 0px;
+        border: 1px solid lightgrey;
+      }
+
+      .user1 {
+        margin-top: 30px;
+        margin-left: 65px;
+      }
+
+      .name1 {
+        font-family: Calibri Light;
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .title11 {
+        font-family: Calibri Light; 
+        font-weight: bold;
+        font-size: 25px; 
+        text-shadow: 1px 1px 4px darkgrey;
+      }
+
+      hr {
+        border-top: 1px solid lightblue;
+      }
+
+      .info1 {
+        margin-top: 20px;
+        font-family: Calibri Light;
+        font-size: 23px;
+      }
+
+      .navbar-toggle {
+        background-color: #203864; 
+      }
+
+      .collapse {
+        background-color: white;
+      }
+      </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img class="logo" src="pics/logo.png">
+      <p class="navbar-brand">Ramon Magsaysay</br>High School</p>
+    </div>
+         <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="news.html">NEWS</a></li>
+        <li><a href="announcements.php">ANNOUNCEMENTS</a></li>
+        <li><a href="#">ALUMNI</a></li>
+        <li><a href="#">GALLERY</a></li>
+        <li class="dropdown">
+          <a href="#" class="data-toggle" data-toggle="dropdown">PUBLICATIONS</a>
+          <ul class="dropdown-menu">
+            <li><a href="b&w.html">BLUE AND WHITE</a></li>
+            <li><a href="silahis.html">ANG SILAHIS</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="data-toggle" data-toggle="dropdown">ABOUT</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">AWARDS AND RECOGNITION</a></li>
+            <li><a href="application_form.pdf">APPLY NOW!</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="#">BRIEF HISTORY</a></li>
+          </ul>
+        </li>
+        <li><a href="faq.html">FAQs</a></li>
+        
+
+         <li> <a href="#button" data-toggle="modal"><span class="glyphicon glyphicon-bell"></span> </a> 
+         </li>
+         
+      </ul>
+  </div>
+</nav><?php include('buttonSubscribe.php'); ?> 
+
+
+<div style="margin-top: 90px;">
+  <nav class="navbar2">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="profile.html">Profile</a></li>
+        <li><a href="grades.php">View Grades</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.html">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div class="container">
+  <div class="panel">
+    <img class="user" src="pics\user.png">
+    <div class="name">
+      <font style="font-weight: bold; font-size: 25px; text-shadow: 1px 1px 4px darkgrey;">Dela Cruz, Juan</font></br>
+      <font style="font-size: 20px;">JuanDC</font>
+    </div>
+  </div>
+  <div style="margin-top: 20px; margin-left: 33%;">
+    <p class="title1">PERSONAL INFORMATION</p>
+    <hr>
+    <p class="info"><font style="color: #868B92;">Birthday:</font> January 1, 2000</br>
+        <font style="color: #868B92;">Address:</font> 1304 NY St. Ermita, Manila, Philippines</br>
+        <font style="color: #868B92;">Year Level:</font> Grade 7
+    </p>
+    </br>
+
+    <p class="title1">CONTACT INFORMATION</p>
+    <hr>
+    <p class="info"><font style="color: #868B92;">Email:</font> juan.dc@yahoo.com</br>
+        <font style="color: #868B92;">Phone:</font> +63 9367854132
+    </p>
+
+  </div>
+</div>
+
+
+</body>
+</html>

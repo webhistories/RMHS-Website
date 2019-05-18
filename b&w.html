@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>RMHS - Blue and White</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+      .navbar .navbar-brand {
+        font-family: Elephant;
+        padding-left: 20px;
+        padding-top: 18px;
+        color: #00004d;
+        font-size: 18px;
+        text-shadow: 2px 2px 20px #00264d;
+      }
+      
+      .navbar {
+        background-color: white !important;
+        border-bottom-color: #006699;
+        height: 80px;
+      }
+
+      .logo {
+        width: 65px;
+        height: 65px;
+        float: left;
+        margin-top: 6px;
+      }
+
+      .navbar .nav li a {
+        margin-top: 15px;
+        color: #006699;
+        font-family: Calibri Light;
+      }
+
+      .navbar .nav li a:hover {
+        color: #00004d;
+        font-weight: bold;
+        text-shadow: 1px 1px 4px #cce6ff;
+        transition: .1s;
+      }
+
+      .navbar .nav li a:active {
+        color: #00004d;
+        font-weight: bold;
+        text-shadow: 1px 1px 4px #cce6ff;
+      }
+
+      .navbar .nav .dropdown:hover .dropdown-menu {
+        display: block;
+        text-align: center;
+      }
+
+      .title1 {
+        text-align: center;
+        color: #000080;
+        font-family: Georgia Pro Black;
+        font-weight: bolder;
+        font-size: 40px;
+      }
+
+      .atitle {
+        font-family: Calibri Light;
+        color: #00004d;
+        text-shadow: 2px 2px 1px #cce6ff;
+        text-align: center;
+        font-size: 20px;
+      }
+
+      .published {
+        font-family: Calibri;
+        text-align: center;
+        color: black;
+        font-style: italic;
+        font-size: 15px;
+      }
+
+      hr {
+        border-top: 1px solid #999; 
+        width: 100%;
+      }
+
+      .description1 {
+        text-align: justify;
+        font-family: Calibri;
+        font-size: 18px;
+        color: black;
+      }
+
+      .navbar-toggle {
+        background-color: #203864; 
+      }
+
+      .collapse {
+        background-color: white;
+      }
+      </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img class="logo" src="pics/logo.png">
+      <p class="navbar-brand">Ramon Magsaysay</br>High School</p>
+    </div>
+         <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="news.html">NEWS</a></li>
+        <li><a href="announcements.php">ANNOUNCEMENTS</a></li>
+        <li><a href="#">ALUMNI</a></li>
+        <li><a href="#">GALLERY</a></li>
+        <li class="dropdown">
+          <a href="#" class="data-toggle" data-toggle="dropdown">PUBLICATIONS</a>
+          <ul class="dropdown-menu">
+            <li><a href="b&w.html">BLUE AND WHITE</a></li>
+            <li><a href="silahis.html">ANG SILAHIS</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="data-toggle" data-toggle="dropdown">ABOUT</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">AWARDS AND RECOGNITION</a></li>
+            <li><a href="application_form.pdf">APPLY NOW!</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="#">BRIEF HISTORY</a></li>
+          </ul>
+        </li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="welcome.php" >LOGIN</a></li>
+
+         <li> <a href="#button" data-toggle="modal"><span class="glyphicon glyphicon-bell"></span> </a> 
+         </li>
+         
+      </ul>
+  </div>
+</nav><?php include('buttonSubscribe.php'); ?> 
+
+  
+<div class="container" style="margin-top:100px">
+  <h3 class="title1">Blue and White</h3>
+  </br>
+  <p class="atitle">Magsaysay inaugurates new conference room</p>
+  <p class="published">Published: Friday, 04 December 2015</p>
+  <hr>
+  <p class="description1">The new conference room of Ramon Magsaysay High School (RMHS) was opened for students and teachers use last October 13, 2015 after almost six months of construction.</br></br>The School administration initiated a renovation plan when some teachers suggested for bigger conference room, according to RMHS accountant, Ms . Susan Rivera.</br></br>They thought of an idea to find a more spacious area to house the conference room, and decided to put it in the records section of the school to give way for its construction.</br></br>Functions of the conference room will be for: Department head meetings, master teachers’ monthly meetings, and other events, one of which is the closing ceremony of the Boys and Girls week for the division.</br></br>Funds for the renovation were shared by the School’s Maintenance Other Operating Expense (MOOE), Youth Entrepreneurship Cooperation School (YECS), RMHS Multi-purpose Cooperative (RMHSFMPC), RMHS Retail Laboratory store and the school office savings.</br></br>Ms .Rivera added that the records section was transferred to a more convenient area which is at the first floor of the Special Science Building (SSB) near the entrance where request for student forms and permanent records is accessible.</br></br>Recently, the new conference room held MAPEH and Science departments’ film showing activities, and English Quiz Bee.</br></br>Meanwhile, the computer room was moved to the second floor of the main building and the old conference room will be renovated to give way for a new Audio-Visual Room (AVR).</br></br>The Audio-Visual Room once fully equipped and renovated however, will be used for other assemblies, events and local competitions.</br></br>(Angel Arnecilla)
+  </p>
+
+</div>
+
+</body>
+</html>

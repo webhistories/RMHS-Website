@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title></title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <script
+    type="text/javascript"
+    src="/js/lib/dummy.js"
+    
+  ></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+
+
+  <style id="compiled-css" type="text/css">
+      
+  </style>
+
+
+  <!-- TODO: Missing CoffeeScript 2 -->
+
+  <script type="text/javascript">
+
+
+    window.onload=function(){
+      
+var term = 0;
+var price = 0;
+var additional = 0;
+var fix = 0;
+var plan = document.getElementById('level');
+plan.addEventListener('change', enableBilling, false);
+var select = document.getElementById('section');
+select.addEventListener('change', updatePrice, false);
+
+function populateBilling(planName) {
+    var options = {
+        7: { 
+            "Option" : ["Charles", "Christopher"],
+            "Value" : ["Charles", "Christopher"]
+        },
+        8: { 
+            "Option" : ["Lorenzo Ruiz", "Lawrence"],
+            "Value" : ["Lorenzo Ruiz", "Lawrence"]
+        },
+        9: { 
+            "Option" : ["Placid", "Peregrine"],
+            "Value" : ["Placid", "Peregrine"]
+        },
+         10: { 
+            "Option" : ["Rafael", "Rita"],
+            "Value" : ["Rafael", "Rita"]
+        }
+    }
+
+    //RESET BILLING PERIOD OPTIONS
+    select.options.length = 1;
+    document.getElementById('payment-total').innerText = 0 + additional;
+    document.getElementById('payment-rebill').innerText = 0 + additional;
+    var data = options[planName];
+    if (data) {
+        for (var i = 0; i < data.Option.length; i++){
+            var temp = document.createElement('option');
+            temp.value = data.Value[i];
+            temp.text = data.Option[i];
+            select.appendChild(temp);
+        }
+    }
+}
+    
+function enableBilling(e) {
+        document.getElementById('section').disabled=false;
+        var planName = plan.options[plan.selectedIndex].text.toLowerCase();
+        populateBilling(planName);
+
+}
+
+
+
+    }
+
+</script>
+
+</head>
+<body>
+    
+<table>
+  <col>
+  <colgroup span="2"></colgroup>
+  <colgroup span="2"></colgroup>
+  <tr>
+    <td rowspan="8"></td>
+    <th colspan="1" scope="colgroup">Name</th>
+    <th colspan="1" scope="colgroup">ID Number</th>
+    <th colspan="1" scope="colgroup">Subject</th>
+    <th colspan="4" scope="colgroup">Periodic Rating</th>
+    <th colspan="1" scope="colgroup">Remarks</th>
+  </tr>
+  <tr>
+    <th scope="col"></th>
+     <th scope="col"></th>
+      <th scope="col"></th>
+    <th scope="col">1</th>
+    <th scope="col">2</th>
+    <th scope="col">3</th>
+    <th scope="col">4</th>
+     <th scope="col"></th>
+  </tr>
+  <tr>
+    <th scope="row">Teddy Bears</th>
+    <td>50,000</td>
+    <td>30,000</td>
+    <td>100,000</td>
+    <td>80,000</td>
+    <td>80,000</td>
+    <td>80,000</td>
+    <td>80,000</td>
+  </tr>
+  <tr>
+    <th scope="row">Board Games</th>
+    <td>10,000</td>
+    <td>5,000</td>
+    <td>12,000</td>
+    <td>9,000</td>
+    <td>80,000</td>
+    <td>80,000</td>
+    <td>80,000</td>
+  </tr>
+</table>
+
+</body>
+</html>
